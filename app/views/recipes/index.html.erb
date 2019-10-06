@@ -1,5 +1,24 @@
-<h1>All our restaurants</h1>
-<% @recipes.each do |recipe| %>
-<h2><%= recipe.name %></h2>
-<p><%= recipe.description %></p>
-<% end %>
+ <body>
+  <h1 class="heading">Breakfast</h1>
+
+    <div class="search">
+      <%= form_tag(recipes_path, :method => "get", id: "search-form") do %>
+        <%= text_field_tag :search, params[:search], placeholder: "Search Recipes..", class: "search-input" %>
+        <%= button_tag(type: "submit", class: "btn btn-default") do %>
+            <i class="fas fa-search"></i>
+        <% end %>
+      <% end %>
+    </div>
+
+  <% @recipes.each do |recipe| %>
+    <div class="card-product">
+        <img src="/assets/<%= recipe.picture %>" />
+
+      <div class="card-product-infos">
+        <span class="prep"><i class="far fa-clock"></i> <%= recipe.preptime %></span>
+        <h2><%= recipe.name %></h2>
+        <p><%= recipe.description %></p>
+      </div>
+    </div>
+  <% end %>
+</body>

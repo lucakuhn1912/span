@@ -10,9 +10,9 @@
   color: white;
   font-size: 24px;
   font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
   a {
+    font-family: $headers-font;
     color: white;
   }
 }
@@ -32,4 +32,5 @@
 .heading {
   text-align: center;
   color: $blue;
+  margin: 40px;
 }
