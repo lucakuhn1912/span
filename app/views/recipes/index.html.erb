@@ -1,0 +1,5 @@
+<h1>All our restaurants</h1>
+<% @recipes.each do |recipe| %>
+<h2><%= recipe.name %></h2>
+<p><%= recipe.description %></p>
+<% end %>
