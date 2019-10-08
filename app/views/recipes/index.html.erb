@@ -1,14 +1,25 @@
  <body>
-  <h1 class="heading">Breakfast</h1>
+  <div class="headers-box text-left">
+    <h3 class="sub-heading"><%= @recipes.count %>+ DELICIOUS BREAKFAST IDEAS</h3>
+    <h1 class="heading text-blue">Breakfast</h1>
+  </div>
 
-    <div class="search">
-      <%= form_tag(recipes_path, :method => "get", id: "search-form") do %>
-        <%= text_field_tag :search, params[:search], placeholder: "Search Recipes..", class: "search-input" %>
-        <%= button_tag(type: "submit", class: "btn btn-default") do %>
-            <i class="fas fa-search"></i>
-        <% end %>
+  <div class="search">
+    <%= form_tag(recipes_path, :method => "get", id: "search-form") do %>
+      <%= text_field_tag :search, params[:search], placeholder: "Search Recipes..", class: "search-input" %>
+      <%= button_tag(type: "submit", class: "btn btn-default") do %>
+          <i class="fas fa-search"></i>
       <% end %>
-    </div>
+    <% end %>
+  </div>
+
+  <div class="tabs d-flex flex-row justify-content-around">
+    <div class="pink-box">bread</div>
+    <div class="pink-box">egg</div>
+    <div class="pink-box">sweet</div>
+    <div class="pink-box">smoothies</div>
+
+  </div>
 
   <% @recipes.each do |recipe| %>
     <div class="card-product">

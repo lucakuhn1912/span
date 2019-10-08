@@ -64,3 +64,22 @@
   position: relative;
   color: $blue;
 }
+
+.tabs {
+
+}
+
+.pink-box {
+  width: 80px;
+  background-color: $pink;
+  justify-content: center;
+  align-items: center;
+  font-family: 'PT Serif', serif;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#search-form {
+  padding-bottom: 0;
+}

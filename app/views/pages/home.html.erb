@@ -1,15 +1,31 @@
 <body>
-  <h3>FAST & EASY LOW CARB RECIPE IDEAS</h3>
-  <h1 class="heading">Recipes</h1>
-  <div class="card-category color-yellow">
+  <div class="headers-box text-left">
+    <h3 class="sub-heading">FAST & EASY LOW CARB RECIPE IDEAS</h3>
+    <h1 class="heading text-blue">Recipes</h1>
+  </div>
+  <div class="card-category color-yellow d-flex flex-column">
     <%= link_to "Breakfast", recipes_path %>
+    <p class="sub-heading-white">FAST & EASY BREAKFAST IDEAS UNDER 10G NET CARBS</p>
 
   </div>
-  <div class="card-category color-pink">
+  <div class="card-category color-pink d-flex flex-column">
     <%= link_to "Lunch & Dinner", recipes_path %>
+    <p class="sub-heading-white">DELICIOUS LOW CARB MEALS FOR ANY TIME</p>
   </div>
-  <div class="card-category color-light-blue">
+  <div class="card-category color-light-blue d-flex flex-column">
     <%= link_to "Soups & Salads", recipes_path %>
+    <p class="sub-heading-white">LIGHT SOUPS & SALADS TO ENJOY ANY TIME</p>
+  </div>
+  <div class="card-category color-green d-flex flex-column">
+    <%= link_to "Snacks & Sides", recipes_path %>
+    <p class="sub-heading-white">SOMETHING FOR INBETWEEN & ON THE SIDE</p>
+  </div>
+  <div class="card-category color-red d-flex flex-column">
+    <%= link_to "Condiments", recipes_path %>
+    <p class="sub-heading-white">HEALTHY CONDIMENT RECIPES FOR MORE FLAVOUR</p>
   </div>
 
 </body>
+
+
+

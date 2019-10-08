@@ -29,8 +29,52 @@
   background-color: $pink;
 }
 
-.heading {
-  text-align: center;
+.color-green {
+  background-color: $green;
+}
+
+.color-red {
+  background-color: $red;
+}
+
+.left-text {
+  text-align: left;
+}
+
+.font-sans {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.font-serif {
+  font-family: 'PT Serif', serif;
+}
+
+.text-light-blue {
+  color: $light-blue;
+}
+
+.text-blue {
   color: $blue;
-  margin: 40px;
+}
+.headers-box {
+  margin: 20px 15px 20px 15px;
+}
+
+.sub-heading{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 15px;
+  color: $blue;
+  opacity: 0.5;
+  margin-bottom: 0;
+}
+
+.sub-heading-white {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+  color: white;
+  margin-bottom: 0;
+}
+
+.heading {
+  font-weight: bold;
 }
