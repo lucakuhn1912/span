@@ -3,6 +3,14 @@
     <h3 class="sub-heading">FAST & EASY LOW CARB RECIPE IDEAS</h3>
     <h1 class="heading text-blue">Recipes</h1>
   </div>
+  <div class="search">
+    <%= form_tag(recipes_path, :method => "get", id: "search-form") do %>
+      <%= text_field_tag :search, params[:search], placeholder: "Search Recipes..", class: "search-input" %>
+      <%= button_tag(type: "submit", class: "btn btn-default") do %>
+          <i class="fas fa-search"></i>
+      <% end %>
+    <% end %>
+  </div>
   <div class="card-category color-yellow d-flex flex-column">
     <%= link_to recipes_path do %>
       <h3>Breakfast</h3>

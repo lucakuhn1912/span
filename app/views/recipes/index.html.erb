@@ -13,11 +13,37 @@
     <% end %>
   </div>
 
+
+
   <div class="tabs d-flex flex-row justify-content-around">
-    <div class="pink-box">bread</div>
-    <div class="pink-box">egg</div>
-    <div class="pink-box">sweet</div>
-    <div class="pink-box">smoothies</div>
+
+    <%= form_tag(recipes_path, :method => "get") do %>
+      <%= text_field_tag :caegory, params[:category], value:"breakfast", hidden: true %>
+      <%= button_tag(type: "submit", class: "btn btn-default") do %>
+        <div class="pink-box">all</div>
+      <% end %>
+    <% end %>
+
+    <%= form_tag(recipes_path, :method => "get") do %>
+      <%= text_field_tag :subcategory, params[:subcategory], value: "egg", hidden: true %>
+      <%= button_tag(type: "submit", class: "btn btn-default") do %>
+         <div class="pink-box">egg</div>
+      <% end %>
+    <% end %>
+
+    <%= form_tag(recipes_path, :method => "get") do %>
+      <%= text_field_tag :subcategory, params[:subcategory], value: "smoothie", hidden: true %>
+      <%= button_tag(type: "submit", class: "btn btn-default") do %>
+        <div class="pink-box">smoothie</div>
+      <% end %>
+    <% end %>
+
+    <%= form_tag(recipes_path, :method => "get") do %>
+      <%= text_field_tag :subcategory, params[:subcategory], value: "bread", hidden: true %>
+      <%= button_tag(type: "submit", class: "btn btn-default") do %>
+        <div class="pink-box">bread</div>
+      <% end %>
+    <% end %>
 
   </div>
 

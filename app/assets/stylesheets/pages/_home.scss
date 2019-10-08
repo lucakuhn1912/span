@@ -20,6 +20,7 @@
 
 .color-yellow {
   background-color: $yellow;
+  margin-top: 0;
 }
 
 .color-light-blue {
@@ -58,7 +59,7 @@
   color: $blue;
 }
 .headers-box {
-  margin: 20px 15px 20px 15px;
+  margin: 20px 15px 5px 15px;
 }
 
 .sub-heading{
@@ -78,4 +79,5 @@
 
 .heading {
   font-weight: bold;
+  margin-bottom: 0;
 }
