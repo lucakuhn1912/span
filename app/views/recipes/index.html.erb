@@ -39,7 +39,7 @@
     <% end %>
 
     <%= form_tag(recipes_path, :method => "get") do %>
-      <%= text_field_tag :subcategory, params[:subcategory], value: "bread", hidden: true %>
+      <%= text_field_tag :subcategory, params[:subcategory], value: "toast", hidden: true %>
       <%= button_tag(type: "submit", class: "btn btn-default") do %>
         <div class="pink-box">bread</div>
       <% end %>
